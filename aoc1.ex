@@ -12,7 +12,6 @@ defmodule Direction do
       "L" <> rest when current == "W" -> ["S", rest]
       "L" <> rest when current == "S" -> ["E", rest]
       "L" <> rest when current == "E" -> ["N", rest]
-      _ -> ""
     end
     len = String.to_integer(len)
     case dir do
